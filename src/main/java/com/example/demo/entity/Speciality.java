@@ -1,0 +1,6 @@
+package com.example.demo.entity;
+
+public enum Speciality {
+	CARDIOLOGIE,NEUROLOGIE ,OTORHINOLARYNGOLOGIE,OPHTALMOLOGIE,PÉDIATRIE,ALLERGOLOGIE 
+
+}
