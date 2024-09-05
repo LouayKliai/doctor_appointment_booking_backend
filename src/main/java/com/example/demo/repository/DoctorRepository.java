@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface DoctorRepository extends JpaRepository<Doctor, Integer>{
 	Doctor[] getDoctorByFirstName(String firstName);
 	Doctor[] getDoctorByLastName(String lastName);
-	//Doctor[] getAllDoctors();
+	Doctor[] getAllDoctors();
 }

@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
+import java.util.List;
+
 import com.example.demo.entity.Appointment;
 
 public interface AppointmentService {
@@ -7,8 +9,9 @@ public interface AppointmentService {
 	void deleteAllAppointment();
 	Appointment addAppointment(Appointment Appointment);	
 	Appointment getAppointmentById(int id);
-	Appointment getAppointmentByDate(String date);
-	Appointment modifierAppointment(int id);
+	List<Appointment> getAllAppointments();
+	List<Appointment> getAppointmentByDate(String date);
+	Appointment modifierAppointment(int id,Appointment appointment);
 	
 
 }

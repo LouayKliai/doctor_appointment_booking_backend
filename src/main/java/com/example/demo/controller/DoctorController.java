@@ -1,6 +1,8 @@
 package com.example.demo.controller;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.entity.Doctor;
 import com.example.demo.service.DoctorService;
@@ -25,13 +27,12 @@ public class DoctorController {
 	Doctor addNewDoctor(@RequestBody Doctor doctor) {
 		return doctorServ.addDoctor(doctor);
 	}
-	
-	/*
+		
 	@GetMapping("/doctors")
-	Doctor[] getDoctors() {
+	List<Doctor> getDoctors() {
 	return doctorServ.getAllDoctors();
 	}
-	*/
+	
 	@GetMapping("/doctors/{id}")
 	Doctor getDoctorById(@PathVariable int id) {
 		return doctorServ.getDoctorById(id);
